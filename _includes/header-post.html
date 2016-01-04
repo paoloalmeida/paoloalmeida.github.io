@@ -1,0 +1,59 @@
+<a href="#cd-nav" class="cd-nav-trigger">Menu
+	<span class="cd-nav-icon"></span>
+
+	<svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+		<circle fill="transparent" stroke="#e61c42" stroke-width="2" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+	</svg>
+</a>
+
+<div id="cd-nav" class="cd-nav">
+	<div class="cd-navigation-wrapper">
+		<div class="cd-half-block">
+			<nav>
+				<ul class="cd-primary-nav">
+					<li><a href="/" class="selected">Home</a></li>
+					<li><a href="/blog">Blog</a></li>
+					<li><a href="/about">About</a></li>
+					<!-- <li><a href="#">Docs</a></li> -->
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div><!-- .cd-half-block -->
+
+		<div class="cd-half-block">
+			<address>
+				<ul class="cd-contact-info">
+					<li><a href="mailto:info@myemail.co">paolo.2frame@gmail.com</a></li>
+					<li>+55 11 99411 9933</li>
+				</ul>
+				<ul class="cd-contact-socials">
+					<li><a href="">Instagram</a></li>
+					<li><a href="#0">Behance</a></li>
+					<li><a href="#0">Dribbble</a></li>
+				</ul>
+			</address>
+		</div> <!-- .cd-half-block -->
+	</div> <!-- .cd-navigation-wrapper -->
+</div> <!-- .cd-nav -->
+
+<header class="site-header cf">
+	<h1 class="site-title">
+		<a href="index.html">
+			<!-- <img src="img/logo.png" height="102" width="101" alt=""> -->
+			< PAOLO/ALMEIDA >
+		</a>
+	</h1>
+
+	<div class="cf"></div>
+
+</header><!-- / .site-header -->
+
+<header class="header-post" role="banner">
+    <div class="content">
+        {% if page.date %}
+            <time itemprop="datePublished" datetime="{{ page.date }}" class="date">{{ page.date | date_to_string }}</time>
+        {% endif %}
+        <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
+        <p itemprop="description" class="subtitle">{{ page.description }}</p>
+    </div>
+</header>

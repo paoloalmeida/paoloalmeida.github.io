@@ -1,0 +1,31 @@
+---
+layout: minimal
+permalink: /blog/index.html
+image: '/assets/img/series.png'
+---
+
+<main id="scroll" class="home site-content" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+
+	<div class="page-desc">
+		<h4>Inspirations from around the world.</h4>
+		<p>Varta quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.</p>
+	</div>
+
+	<section class="news">
+		{% for post in site.posts %}
+			<article role="article" class="post-item blog_item full grey_bg" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+				<a class="datetime full_link" href="{{ post.url | prepend: site.baseurl }}"></a>
+				<div class="abs_bg" style="background-image: url('{{ post.image }}')"></div>
+				<div class="blog_item_inner">
+					<h1 class="post-title" itemprop="name">{{ post.title }}</h1>
+					<time class="date" datetime="{{ post.date | date_to_xmlschema }}">Brenda Vargas | {{ post.date | date: "%d" }}, {{ post.date | date: "%B %Y" }}</time>
+					<p class="description">
+						{{ post.content | strip_html | truncatewords:40 }}
+						<a href="{{ post.url | prepend: site.baseurl }}" class="link">Read more about {{post.title}}</a>
+					</p>
+				</div>
+			</article>
+		{% endfor %}
+
+	<!--END .site-content-->
+</main>
