@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Post Hello World",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/post-hello-world/",
+      "date"     : "06 Jan 2016"
+    } ,
+  
+    {
       "title"    : "Welcome to Jekyll",
       "category" : "jekyll is awesome",
       "tags"     : "jekyll and web",
