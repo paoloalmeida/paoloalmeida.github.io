@@ -1,12 +1,12 @@
 # Site settings
-description: Paolo Almeida | Front End Engineer / UX/UI Creative / SEO Specialist
+description: "Paolo Almeida - Front-end Engineer & UX/UI Creative"
 baseurl: ""
 url: "http://paoloalmeida.com.br"
 
 # User settings
-username: Paolo Almeida
-user_description: Paolo Almeida | Front End Engineer / UX/UI Creative / SEO Specialist
-user_title: Paolo Almeida | Front End Engineer / UX/UI Creative / SEO Specialist
+username: "Paolo Almeida"
+user_description: "Paolo Almeida | Front End Engineer / UX/UI Creative / SEO Specialist"
+user_title: "Paolo Almeida | Front End Engineer / UX/UI Creative / SEO Specialist"
 email: paolo.2frame@gmail.com
 twitter_username: paolo_almeida
 github_username:  paoloalmeida
