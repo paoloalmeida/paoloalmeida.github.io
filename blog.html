@@ -18,10 +18,10 @@ image: '/assets/img/series.png'
 				<div class="abs_bg" style="background-image: url('{{ post.image }}')"></div>
 				<div class="blog_item_inner">
 					<h1 class="post-title" itemprop="name">{{ post.title }}</h1>
-					<time class="date" datetime="{{ post.date | date_to_xmlschema }}">Brenda Vargas | {{ post.date | date: "%d" }}, {{ post.date | date: "%B %Y" }}</time>
+					<time class="date" datetime="{{ post.date | date_to_xmlschema }}">Paolo Almeida | {{ post.date | date: "%d" }}, {{ post.date | date: "%B %Y" }}</time>
 					<p class="description">
 						{{ post.content | strip_html | truncatewords:40 }}
-						<a href="{{ post.url | prepend: site.baseurl }}" class="link">Read more about {{post.title}}</a>
+						<a href="{{ post.url | prepend: site.baseurl }}" class="link">Leia mais {{post.title}}</a>
 					</p>
 				</div>
 			</article>
