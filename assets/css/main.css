@@ -964,6 +964,25 @@ nav[role="navigation"] {
 .site-footer a:visited { color: #2c2c2c; }
 .site-footer a:hover { color: #32fac9; }
 
+
+.typewrite:after{
+	content: '';
+	display: inline-block;
+	position: relative;
+	top: 5px;
+	width: 3px;
+	height: 38px;
+	background: #00F3D7;
+	opacity: 0;
+	-webkit-animation: showBlink steps(1) 1s infinite;
+	animation: showBlink steps(1) 1s infinite;
+}
+.typewrite{
+	color:#00F3D7;
+	font-family: 'Righteous',helvetica,sans-serif;
+}
+
+
 /*=================================*/
 /* Media Queries
 /*=================================*/
@@ -972,9 +991,9 @@ nav[role="navigation"] {
 	.site-tagline p {
 		font-size: 16px;
 	}
-	.typewrite:after{
+	/*.typewrite:after{
 		height:20px;
-	}
+	}*/
 	.extra-font{
 		font-size:18px;
 	}
@@ -1337,22 +1356,6 @@ nav[role="navigation"] {
     }
 }
 
-.typewrite:after{
-	content: '';
-	display: inline-block;
-	position: relative;
-	top: 5px;
-	width: 3px;
-	height: 38px;
-	background: #00F3D7;
-	opacity: 0;
-	-webkit-animation: showBlink steps(1) 1s infinite;
-	animation: showBlink steps(1) 1s infinite;
-}
-.typewrite{
-	color:#00F3D7;
-	font-family: 'Righteous',helvetica,sans-serif;
-}
 p{
 	font-size:20px;
 	text-transform:uppercase;
