@@ -155,6 +155,11 @@ pre {
 pre {
   margin-bottom: 2rem;
 }
+.clients-list li{
+    display:inline-block;
+    float:none;
+    width:100px;
+}
 
 /*===== Titles =====*/
 .site-title {
@@ -172,7 +177,7 @@ pre {
     position: fixed;
 }
 .site-title a,
-.site-title a:visited { color: #e61c42; }
+.site-title a:visited { color: #e61c42; padding: 5px; background: #fff;}
 .site-title a:hover,
 .site-title a:active {
     color: #e61c42;
@@ -652,8 +657,7 @@ nav[role="navigation"] {
   user-select: none;
   /* use padding and font-size to change buttons size */
   padding: .6em .8em;
-  font-size: 18p
-  x;
+  font-size: 18px;
 
 }
 .cd-pagination a {
@@ -991,9 +995,9 @@ nav[role="navigation"] {
 	.site-tagline p {
 		font-size: 16px;
 	}
-	/*.typewrite:after{
+	.typewrite:after{
 		height:20px;
-	}*/
+	}
 	.extra-font{
 		font-size:18px;
 	}
@@ -1006,7 +1010,7 @@ nav[role="navigation"] {
 		font-size: 16px;
 	}
 	.typewrite:after{
-		height:20px;
+		/*height:20px;*/
 	}
 	.extra-font{
 		font-size:18px;
@@ -1275,14 +1279,14 @@ nav[role="navigation"] {
     /*===== Structures =====*/
     .site-header,
     .page-desc {
-        padding: 100px 200px;
+        padding: 50px 200px;
     }
     .row {
         margin-top: 120px;
     }
     /*===== Titles =====*/
     .site-title {
-        margin-bottom: 200px;
+        margin-bottom: 140px;
     }
     .site-tagline {
         margin-bottom: 100px;
@@ -1297,9 +1301,12 @@ nav[role="navigation"] {
     .site-tagline h5 {
         font-size: 1.4rem;
     }
+    .typewrite:after{
+        height:32px;
+    }
     /*===== Navigations =====*/
     .cd-nav-trigger {
-        top: 94px;
+        top: 44px;
         right: 140px;
     }
     .cd-nav .cd-navigation-wrapper {
