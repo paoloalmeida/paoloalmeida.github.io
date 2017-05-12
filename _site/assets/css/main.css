@@ -912,8 +912,7 @@ nav[role="navigation"] {
 .page-desc ul {
   margin: 60px 0;
 }
-.page-desc  li {
-  list-style-type: disc;
+.page-desc li {
   margin-right: 15px;
 }
 .row {
